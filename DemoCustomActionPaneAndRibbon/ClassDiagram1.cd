@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DemoCustomActionPaneAndRibbon.CustomerPane">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAEUBgAIACAIAACACAAgAAABCAIAQAAQII=</HashCode>
+      <FileName>CustomerPane.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Facade" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DemoCustomActionPaneAndRibbon.CustomRibbon">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAACAAAAAAAAiAAAACAAACAAAAAAAAQAGAAAA=</HashCode>
+      <FileName>CustomRibbon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoCustomActionPaneAndRibbon.frmProducts">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CABAAAAAACEAAAAAAACAAQAKAAAgQACIBoAAAQAIAAg=</HashCode>
+      <FileName>frmProducts.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Facade" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DemoCustomActionPaneAndRibbon.Models.BONorthwindFacade">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQEAAAAABAAAAAAAAAAAAAAAAAAIQAAAAAABAAA=</HashCode>
+      <FileName>Models\BONorthwindFacade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DBContext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DemoCustomActionPaneAndRibbon.Models.NORTHWNDEntities">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\NorthWindEntities.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoCustomActionPaneAndRibbon.ThisWorkbook">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>UAAgAAAQCAEAEQAgAwAAgBkAAEAAABASAAgAIAgAACg=</HashCode>
+      <FileName>ThisWorkbook.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CustomPane" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

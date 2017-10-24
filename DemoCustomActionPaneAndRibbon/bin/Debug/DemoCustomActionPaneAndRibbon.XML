@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoCustomActionPaneAndRibbon</name>
+    </assembly>
+    <members>
+        <member name="T:DemoCustomActionPaneAndRibbon.CustomerPane">
+            <summary>
+            CustomPane is custom ActionPane.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.InitDropdowns">
+            <summary>
+            Method:InitDropDowns
+            Purpose:Initialises both customer dropdown and Export format dropdwon.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.AddOrdersToWorkbook(System.Collections.Generic.List{DemoCustomActionPaneAndRibbon.Models.Order},System.String)">
+            <summary>
+            Method:AddOrdersToWorkbook
+            Purpose:Adds orders for the customer to the workbook
+            </summary>
+            <param name="orders"></param>
+            <param name="customerID"></param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.SaveOrderAsXMLFile(System.Collections.Generic.List{DemoCustomActionPaneAndRibbon.Models.Order},System.String)">
+            <summary>
+            Method:SaveOrderASXMLFile
+            Purpose:Export orders for the customer in XML Format
+            </summary>
+            <param name="orders"></param>
+            <param name="customerID"></param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.SaveOrdersAsCSVFile(System.Collections.Generic.List{DemoCustomActionPaneAndRibbon.Models.Order},System.String)">
+            <summary>
+            Method:SaveOrderAsCSVFile
+            Purpose:Saves Orders for the customer in CSV format.
+            </summary>
+            <param name="orders"></param>
+            <param name="customerID"></param>
+        </member>
+        <member name="F:DemoCustomActionPaneAndRibbon.CustomerPane.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomerPane.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.CustomRibbon">
+            <summary>
+            Custom Ribbon Implementation.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomRibbon.btnProduct_Click(System.Object,Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs)">
+            <summary>
+            Handler for Product List
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomRibbon.btnShowHide_Click(System.Object,Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs)">
+            <summary>
+            Handler for Show/Hide Customer Pane.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DemoCustomActionPaneAndRibbon.CustomRibbon.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomRibbon.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.CustomRibbon.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.ThisRibbonCollection">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.frmProducts.InitProducts">
+            <summary>
+            Method:InitProducts
+            Purpose:Binds products collection to the datagrid.
+            </summary>
+        </member>
+        <member name="F:DemoCustomActionPaneAndRibbon.frmProducts.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.frmProducts.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.frmProducts.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:DemoCustomActionPaneAndRibbon.Models.BONorthwindFacade" -->
+        <member name="M:DemoCustomActionPaneAndRibbon.Models.BONorthwindFacade.GetCustomers">
+            <summary>
+            Method:GetCustomers
+            Purpose:Returns collection of Customers from NorthWind database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Models.BONorthwindFacade.GetOrders(System.String)">
+            <summary>
+            Method:GetOrders
+            Purpose:Returns orders for the customer selected.
+            </summary>
+            <param name="customerID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Models.BONorthwindFacade.GetProducts">
+            <summary>
+            Method:GetProducts
+            Purpose:Returns products from NorthWind database and projects as collection of Custom class ProductEntity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Sheet1">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InternalStartup">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.Initialize">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.FinishInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InitializeDataBindings">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InitializeCachedData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InitializeData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.BindToData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.StartCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.StopCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.IsCached(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.BeginInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.EndInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InitializeControls">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.InitializeComponents">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet1.NeedsFill(System.String)">
+            
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Globals">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Globals.#ctor">
+            
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Sheet2">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InternalStartup">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.Initialize">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.FinishInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InitializeDataBindings">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InitializeCachedData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InitializeData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.BindToData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.StartCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.StopCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.IsCached(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.BeginInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.EndInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InitializeControls">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.InitializeComponents">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet2.NeedsFill(System.String)">
+            
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Sheet3">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InternalStartup">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.Initialize">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.FinishInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InitializeDataBindings">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InitializeCachedData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InitializeData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.BindToData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.StartCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.StopCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.IsCached(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.BeginInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.EndInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InitializeControls">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.InitializeComponents">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Sheet3.NeedsFill(System.String)">
+            
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.ThisWorkbook">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.ShowHide_ActionPane(System.Boolean)">
+            <summary>
+            Method:ShowHide_ActionPane
+            Purpose:Toggles the custom pane.
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InternalStartup">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.Initialize">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.FinishInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InitializeDataBindings">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InitializeCachedData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InitializeData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.BindToData">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.StartCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.StopCaching(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.IsCached(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.BeginInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.EndInitialization">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InitializeControls">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.InitializeComponents">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.NeedsFill(System.String)">
+            
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.ThisWorkbook.OnShutdown">
+            
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Utilities.LogLevel">
+            <summary>
+            LogLevel
+            </summary>
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Utilities.Logger">
+            <summary>
+            Class which Implements llght weight logging functionality.
+            Aim is to demonstrate Singleton design pattern.
+            </summary>
+        </member>
+        <member name="M:DemoCustomActionPaneAndRibbon.Utilities.Logger.SaveToLogFile(System.String,System.String,DemoCustomActionPaneAndRibbon.Utilities.LogLevel)">
+            <summary>
+            Method: SaveToLogFile
+            Purpose:Logs message in flat file.
+            </summary>
+            <param name="category"></param>
+            <param name="message"></param>
+            <param name="curLevel"></param>
+        </member>
+        <member name="T:DemoCustomActionPaneAndRibbon.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DemoCustomActionPaneAndRibbon.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DemoCustomActionPaneAndRibbon.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
